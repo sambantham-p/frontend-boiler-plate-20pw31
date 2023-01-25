@@ -15,6 +15,10 @@ const Seedphrase = () =>{
                 Your Seed Phrase makes it easy to back up and restore your account </Text>
                 <View style={styles.Warning}>
                     <Text style={styles.Warntext}>WARNING: Never disclose your Secret Recovery Phrase. Anyone with this phrase can take your assets forever</Text>
+                    
+                </View>
+                <View style={styles.mnemonic}>
+                    <Text>SEED PHRASE</Text>
                     <Text>{mnemonic}</Text>
                 </View>
                 <View style={styles.footer}>
@@ -55,6 +59,11 @@ const styles = StyleSheet.create({
         left : -80,
         width: 220
     },
+    mnemonic:{
+        top: 300,
+        left: 4,
+        gap: 10
+    }
 
 })
 export default Seedphrase;
