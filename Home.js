@@ -13,7 +13,7 @@ export default function Home () {
             <Text style={styles.navText}>Explore all of Web3 in one place</Text>
             <View style={styles.content}>
               <View style={styles.buy}>
-                
+                  <Image source={require('./assets/swap.png')}/>
               </View>
               <View style={styles.footer}>
                 <Button 
