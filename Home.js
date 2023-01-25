@@ -1,17 +1,31 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, View, Text, StatusBar, Image } from 'react-native';
+import { useEffect } from 'react';
+import { StyleSheet, View, Text, StatusBar, Image ,Button} from 'react-native';
 
-export default function Home ({navigation}) {
+
+export default function Home () {
+    const navigation = useNavigation()
     return(
-        <View style={styles.container}>
-            <Image source={require('./assets/home-banner.png')} style={styles.bannerImage}></Image>
+      <View style={styles.head}>
+          <Text style={styles.font}>Get the world 's first non- custodial cypher card</Text>
+          <View style={styles.nav}>
+            <Text style={styles.navText}>Explore all of Web3 in one place</Text>
             <View style={styles.content}>
-                <Text style={styles.mainText}>Open up Home.js to start working!</Text>
-                <Text style={styles.helpText}>All the libraries and assets required are available in the app directory.</Text>
-                <Text style={styles.hintText}>Hint: Make use of stack navigation in App.js to navigate between screens!</Text>
+              <View style={styles.buy}>
+                
+              </View>
+              <View style={styles.footer}>
+                <Button 
+                      title="CREATE NEW WALLET"
+                      color="gold"
+                      onPress={ () => navigation.navigate('Seedphrase')}
+                      accessibilityLabel="Learn more about this purple button"/>
+              </View>
             </View>
-            <StatusBar style="auto" />
-        </View>
+          </View>
+          
+      </View>
     )
 }
 
@@ -47,5 +61,28 @@ const styles = StyleSheet.create({
       fontSize: 16,
       textAlign: 'center',
       marginTop: 15
-    }
+    },
+    font :{
+        fontSize: 22,
+        paddingLeft: 55,
+        paddingTop: 35,
+        fontWeight: 'bold',
+        alignItems: 'center',
+    },
+    navText:{
+      alignItems: 'center',
+    },
+    head :{
+      top: 15,
+    },
+    nav:{
+       top : 25,
+       left: 55
+    },
+    footer:{
+      top: 400,
+      left : -80,
+      width: 220
+    },
+   
   });
