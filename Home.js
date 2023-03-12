@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
-import React,{ useEffect } from 'react';
-import { StyleSheet, View, Text, StatusBar, Image ,Button} from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Text, Image ,Button} from 'react-native';
 
 
 export default function Home () {
