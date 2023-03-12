@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Seedpharse from './Seedphrase';
 import {View,StyleSheet,Text,Button} from "react-native"
-var bip39 = require('bip39') 
+let bip39 = require('bip39') 
 
 const mnemonic = bip39.generateMnemonic()
 
