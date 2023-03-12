@@ -3,9 +3,8 @@ import React,{useState} from "react"
 let bip39 = require('bip39') 
 
 export default function Address(){
- 
-
-    add = bip39.mnemonicToSeedSync('basket actual').toString('hex')
+    let [add,setAdd] = useState();
+    setAdd = bip39.mnemonicToSeedSync('basket actual').toString('hex')
     return(
     <View style={styles.sty}>
         <Text>{add}</Text>
