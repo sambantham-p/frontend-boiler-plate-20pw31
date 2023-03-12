@@ -5,7 +5,7 @@ export default function Address(){
     let [add,setAdd] = useState();
     return(
     <View style={styles.sty}>
-        <Text onChange = {() => setAdd(add)}>{add}</Text>
+        <Text onChange = {(add) => setAdd(add)}>{add}</Text>
     </View>
     )
 }
