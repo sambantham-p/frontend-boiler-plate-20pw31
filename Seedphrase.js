@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import Seedpharse from './Seedphrase';
 import {View,StyleSheet,Text,Button} from "react-native"
 let bip39 = require('bip39') 
 
