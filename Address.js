@@ -1,5 +1,4 @@
 import React from 'react';
-import Seedpharse from './Seedphrase';
 import {View,StyleSheet,Text} from "react-native"
 import {useState} from "react"
 var bip39 = require('bip39') 
