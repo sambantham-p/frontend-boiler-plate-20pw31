@@ -3,8 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './Home'
 import Seedphrase from './Seedphrase';
-import {View,Text} from 'react-native';
-import { StyleSheet } from 'react-native';
 import Address from './Address';
 
 const Stack = createStackNavigator();
