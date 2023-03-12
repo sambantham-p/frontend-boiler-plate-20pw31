@@ -3,7 +3,7 @@ import React,{useState} from "react"
 let bip39 = require('bip39') 
 
 export default function Address(){
-    let [add,setAdd] = useState();
+ 
 
     add = bip39.mnemonicToSeedSync('basket actual').toString('hex')
     return(
