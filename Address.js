@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,StyleSheet,Text} from "react-native"
 import {useState} from "react"
-var bip39 = require('bip39') 
+let bip39 = require('bip39') 
 
 export default function Address(){
     let [add,setAdd] = useState();
